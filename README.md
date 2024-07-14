@@ -30,24 +30,27 @@ Unicode Flash PPT Generator （Unicode快闪PPT生成器）是一个Python脚本
 
 6. 如果要生成视频文件(.mp4)需按照以下步骤：
 
-<details>
-<summary>生成视频教程</summary>
+### 生成视频教程
 
-1. 打开 pptx 文件，点击 "文件" > "导出" > "创建动态GIF"；
-2. 质量选择 "特大" (1080p 24fps)；
-3. 点击"创建GIF"按钮，选择保存位置 > 为GIF文件命名 > 点击"保存"；
-4. 等待gif文件生成完毕，把 `res` 目录下的 `MP4.bat` 文件放在生成的git目录下；
-5. 把 `res` 目录下的 `DUTM.ogg` 文件放在生成的git目录下，并运行。
-</details>
+1. 打开 pptx 文件，选择所有幻灯片(Ctrl+A) "切换" > "换片方式" > 
+取消
+- [ ] 点击鼠标时
+- [x] 设置自动换片时间
+2. 自动换片时间设置为 `1÷你需要的帧数` ，看你的情况是否需要 四舍五入；
+3. 点击"文件" > "另存为" > 选择 "`*.wmv`" 格式(如果选择mp4格式那么生成的视频会莫名其妙的卡顿)；
+4. 点击"保存"；
+5. 等待wmv视频生成完毕，把 `res` 目录下的 `MP4.bat` 文件放在生成的git目录下；
+6. 把 `res` 目录下的 `DUTM.ogg` 文件放在生成的git目录下，并运行。
+
 
 <details>
 <summary>生成速度公式</summary>
 
 测试标准为我的电脑<br>
 小于1500时：<br>
-![equation](https://latex.codecogs.com/gif.latex?\dpi{200}&space;y=-7.24\ln(x)+200)<br>
+![equation](https://latex.codecogs.com/gif.latex?\dpi{160}&space;y=-7.24\ln(x)+200)<br>
 大于1500时：<br>
-![equation](https://latex.codecogs.com/gif.latex?\dpi{200}&space;y=7079.45x^{\left(-0.8751\right)}12.5)<br>
+![equation](https://latex.codecogs.com/gif.latex?\dpi{160}&space;y=7079.45x^{\left(-0.8751\right)}12.5)<br>
 </details>
 
 ## 功能特点
