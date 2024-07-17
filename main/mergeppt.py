@@ -4,6 +4,13 @@ from tqdm import tqdm
 from pptx import Presentation
 from pptx.dml.color import RGBColor
 from pptx.enum.dml import MSO_FILL, MSO_THEME_COLOR
+from rich import traceback
+
+traceback.install(
+    show_locals=True,
+    extra_lines=2,
+    max_frames=10
+)
 
 def copy_background(source_slide, dest_slide):
     # 检查源幻灯片是否有背景填充

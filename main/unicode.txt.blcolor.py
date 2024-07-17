@@ -1,3 +1,11 @@
+from rich import traceback
+
+traceback.install(
+    show_locals=True,
+    extra_lines=2,
+    max_frames=10
+)
+
 # 定义文件名
 filename = "processed_unicode.txt"
 

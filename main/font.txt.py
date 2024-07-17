@@ -2,6 +2,13 @@ import os
 import re
 import sys
 from fontTools.ttLib import TTFont
+from rich import traceback
+
+traceback.install(
+    show_locals=True,
+    extra_lines=2,
+    max_frames=10
+)
 
 def extract_unicode(font_path):
     font = TTFont(font_path)
@@ -40,7 +47,7 @@ def write_to_file(unicode_list):
 
 def main():
     if '-i' not in sys.argv:
-        print("请使用命令行参数 '-i' 指定字体文件。")
+        input("请使用命令行参数 '-i' 指定字体文件。")
         return
     
     index = sys.argv.index('-i')

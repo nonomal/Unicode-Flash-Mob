@@ -1,4 +1,11 @@
 import os
+from rich import traceback
+
+traceback.install(
+    show_locals=True,
+    extra_lines=2,
+    max_frames=10
+)
 
 def main():
     current_directory = os.getcwd()

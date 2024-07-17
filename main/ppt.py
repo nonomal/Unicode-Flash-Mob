@@ -1,11 +1,20 @@
 # .\python\python-3.12.3-embed-amd64\python.exe ppt.py
 
 import os
-from tqdm import tqdm
+import warnings
+from tqdm.rich import tqdm
 from pptx import Presentation
 from pptx.util import Pt, Inches
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN
+from rich import traceback
+
+traceback.install(
+    show_locals=True,
+    extra_lines=2,
+    max_frames=10
+)
+warnings.filterwarnings("ignore")
 
 def add_textbox_centered(slide, text, font_name, font_size, slide_width, slide_height, x_offset, y_offset):
     # 计算文本框的大小（大致估算）

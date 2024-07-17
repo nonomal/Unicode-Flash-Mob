@@ -1,5 +1,12 @@
 import re
 import os
+from rich import traceback
+
+traceback.install(
+    show_locals=True,
+    extra_lines=2,
+    max_frames=10
+)
 
 current_directory = os.getcwd()
 UData = os.path.join(current_directory, 'assets', 'UData.txt')

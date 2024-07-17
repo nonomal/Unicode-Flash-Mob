@@ -1,3 +1,11 @@
+from rich import traceback
+
+traceback.install(
+    show_locals=True,
+    extra_lines=2,
+    max_frames=10
+)
+
 with open('MY1LBlocks1.yaml', 'r', encoding='utf-8') as file:
     lines = file.readlines()
 
