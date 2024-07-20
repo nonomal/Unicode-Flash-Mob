@@ -7,7 +7,7 @@
 )](https://github.com/Losketch/Unicode-Flash-Mob)
 [![License](https://img.shields.io/static/v1?label=使用协议&message=apache+license+2.0&color=critical&logo=creative%20commons)](https://github.com/Losketch/Unicode-Flash-Mob/blob/main/LICENSE)
 
-![icon](https://github.com/Losketch/Unicode-Flash-Mob/blob/UFlashPPT/main/python/assets/icon/icon_256.png)
+![icon](https://github.com/Losketch/Unicode-Flash-Mob/blob/UFlashPPT/main/python/assets/icon/icon.svg)
 
 </div>
 
