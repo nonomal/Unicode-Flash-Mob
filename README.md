@@ -40,7 +40,7 @@ Unicode Flash PPT Generator （Unicode快闪PPT生成器）是一个Python脚本
 3. 点击"文件" > "另存为" > 选择 "`*.wmv`" 格式(如果选择mp4格式那么生成的视频会莫名其妙的卡顿)；
 4. 点击"保存"；
 5. 等待wmv视频生成完毕，把 `res` 目录下的 `MP4.bat` 文件放在生成的wmv目录下；
-6. 把 `res` 目录下的 `DUTM.ogg` 文件放在生成的wmv目录下，并运行 `res`。
+6. 把 `res` 目录下的 `DUTM.ogg` 文件放在生成的wmv目录下，并运行 `MP4.bat`。
 
 
 <details>
