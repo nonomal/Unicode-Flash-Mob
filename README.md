@@ -67,10 +67,15 @@ Unicode Flash PPT Generator （Unicode快闪PPT生成器）是一个Python脚本
 - 在 `ppt.py` 脚本中，您可以调整以下参数：
   - `font_color`：中间字符的颜色
   - `BottomFont`：左下角描述文本的字体
-  - `threshold`：每个PPT文件包含的最大幻灯片数量（实验性功能）
+  - `threshold`：每个PPTX文件包含的最大幻灯片数量（实验性功能，可以使用 `mergeppt.py` 合并多个pptx文件）
   - `font_size`：中间Unicode字符的字体大小
   - `x_offset`：中间字符的x轴偏移量
   - `y_offset`：中间字符的y轴偏移量
+
+- 在 `blcolor.ini` 配置文件中，您可以调整以下参数来改变背景颜色：
+  - 删除行或增加行（必须保留一行）
+  - 增加新的#开头＋16进制颜色代码行
+  - 最好不要有空行
 
 ## 软件授权
 
